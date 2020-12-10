@@ -1,34 +1,12 @@
-# TERM-PROJECT: Wellness Manager
+# Wellness Manager
 
-An online Wellness Manager application to be developed in Java 8=>11
-
-## Team & Roles
-
-- John Mule, Team Coordinator
-
-- Dev Bhatt, Configuration Manager
-
-- Miguel Angel Galan
-
-- Andrea Pallotta
-
-- Justin Nauta
-
-## Team Additional Information
-
-- Meeting times -> Sunday 2-3, Thursday 12:30 - 1:30
-
-- Google Drive link -> https://docs.google.com/document/d/1cCATrdhAzED4e4nxIuWnM2vcJ3ng_nYS/edit#
-
-- Trello link -> https://trello.com/2201swen38301ccteam/home
+A Wellness Manager application to be developed in Java 8=>11
 
 ##Prerequisites
 
 - Java 8=>11
 
 - IntelliJ - as developer platform
-
-#
 
 ##How to begin
 
@@ -51,11 +29,11 @@ An online Wellness Manager application to be developed in Java 8=>11
   ````
   
   ````
-  "gradle clean generateJar" to generate the Jar file (remove the "clean" task if it's your first time using the software)
+  "gradle clean buildApp" to generate the Jar file (remove the "clean" task if it's your first time using the software)
   ````
   
   ````
-  "gradle clean runJar" to generatew and run the Jar file (remove the "clean" task if it's your first time using the software)
+  "gradle clean runApp" to generatew and run the Jar file (remove the "clean" task if it's your first time using the software)
   ````
 
 ## License
