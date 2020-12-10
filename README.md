@@ -1,8 +1,8 @@
 # Wellness Manager
 
-A Wellness Manager application to be developed in Java 8=>11
+> A Wellness Manager application developed in Java 11
 
-##Prerequisites
+## Prerequisites
 
 - Java 11
 
