@@ -1,0 +1,29 @@
+Name: Dev Bhatt
+Account: dmb4086
+Have you been on co-op? Yes
+List 1 to 3 programming languages you know: Python, JavaScript, Swift
+List 1 to 3 hobbies or interests: Making Artisan Coffee, Travelling, Learning new cultures
+
+Name: Miguel Angel Galan
+Account: mag3561-dev
+Have you been on co-op? yes
+List 1 to 3 programming languages you know: Java, JavaScript, Python
+List 1 to 3 hobbies or interests: Riding my motorcycle, learning hardware stuff, Running
+
+Name: Andrea Pallotta
+Account: AndreaPallotta
+Have you been on co-op? no
+List 1 to 3 programming languages you know: Java, JavaScript, Swift
+List 1 to 3 hobbies or interests: Soccer, learning front-end frameworks, bartending
+
+Name: John Mule
+Account: jmm1872
+Have you been on co-op? no
+List 1 to 3 programming languages you know: Java, JavaScript, Python
+List 1 to 3 hobbies or interests: Archery, Origami, Volleyball
+
+Name: Justin Nauta
+Account: jrn2778
+Have you been on co-op? Yes
+List 1 to 3 programming languages you know: Java, JavaScript, C++
+List 1 to 3 hobbies or interests: Developing video games, playing hockey, playing piano

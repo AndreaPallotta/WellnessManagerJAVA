@@ -1,0 +1,83 @@
+plugins {
+    id 'java'
+    id 'base'
+}
+
+group 'rit.swen.cteam'
+version '2.0'
+
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "junit:junit:4.12"
+    compile fileTree(dir: 'lib', include: '*jar')
+}
+
+test {
+    useJUnit()
+}
+
+clean.doLast {
+    delete "./term-project-cteam-2.0.jar"
+}
+
+/**
+ * TO RUN THE MAIN CLASS
+ */
+task run(type: JavaExec) {
+    main = 'Main'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+/**
+ * TO GENERATE THE JAR FILE
+ */
+task generateJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Jar File',
+                'Implementation-Version': project.version,
+                'Main-Class': 'Main',
+                'Class-Path': './lib/*.csv'
+    }
+    exclude 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.SF'
+    archivesBaseName = project.name
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+/**
+ * TO RUN THE JAR FILE
+ */
+task runJar(type: JavaExec) {
+    dependsOn generateJar
+    classpath = generateJar.outputs.files
+    main = 'Main'
+}
+
+
+task copyJar(type: Copy) {
+    from generateJar
+    into "./"
+
+    doLast {
+        def dirName = "${buildDir}"
+        file (dirName).list().each {
+            f -> delete "${dirName}/${f}"
+        }
+        delete dirName
+    }
+}
+
+
+task buildApp (dependsOn: [clean, generateJar, copyJar])
+
+task runApp (type: JavaExec) {
+    dependsOn buildApp
+    main = "-jar"
+    args "./term-project-cteam-2.0.jar"
+}
